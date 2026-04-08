@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La experiencia en los videojuegos · Blog</title>
+    <meta name="description" content="La experiencia en los videojuegos — post del blog." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="matrix">
+    <canvas class="matrix-bg" id="matrix-bg" aria-hidden="true"></canvas>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <div class="shell site-header__inner">
+        <a class="site-logo" href="index.html#contenido" aria-label="Zoquete — inicio">
+          <img src="https://zoquete.art/_assets/v11/9185ae14764cab062f03e8050393ebe42ece86bc.png" width="60" height="54" alt="Logo zoquete" />
+        </a>
+        <button type="button" class="site-nav__toggle" aria-expanded="false" aria-controls="site-nav">
+          <span class="visually-hidden">Abrir o cerrar menú</span>
+          <span class="site-nav__toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Principal">
+          <a href="index.html#sobre-mi">Sobre mí</a>
+          <a href="index.html#proyectos">Ver proyectos</a>
+          <a href="index.html#recomendaciones">Recomendaciones</a>
+          <a href="blog.html">Blog</a>
+          <a href="index.html#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="case section" aria-labelledby="post-title">
+        <div class="shell case__inner js-reveal">
+          <a class="case__back" href="blog.html">Volver</a>
+          <h1 id="post-title" class="case__title">La experiencia en los videojuegos</h1>
+          <p class="case__subhead">2025 · Zoquete</p>
+          <figure class="case__figure">
+            <img src="https://zoquete.art/_assets/v11/3e32c11dc9b0cf3d3b49f478dc440cacf9b4cad5.png" alt="Project" loading="lazy" decoding="async" />
+          </figure>
+
+          <p>Los videojuegos son una forma de narrar.</p>
+          <p>
+            Durante años se habló de los videojuegos como un escape. Pero basta detenerse un momento frente a cualquier partida para entender que ahí hay mucho más que ocio.
+          </p>
+          <p>
+            No se leen, se habitan. No se observan, se viven. Y en ese gesto de habitar un mundo ajeno hay una profundidad que el diseño, en su ansiedad por ser útil, a veces olvida.
+          </p>
+
+          <h2 class="case__h2">Enseñan a perder sin humillación</h2>
+          <p>
+            Enseñan a insistir sin culpa, a explorar sin mapa. Enseñan a leer sistemas complejos de forma intuitiva: retroalimentación, dificultad progresiva, recompensa diferida.
+          </p>
+
+          <h2 class="case__h2">Respeto por el jugador</h2>
+          <p>
+            Un buen juego nunca te trata como un cliente; te trata como alguien capaz. Te deja descubrir, equivocarte, mejorar.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell site-footer__inner">
+        <p>
+          © <span id="year"></span> Felipe Maluenda. Contenido tomado de
+          <a href="https://zoquete.art/experiencia-en-los-videojuegos" target="_blank" rel="noopener noreferrer">zoquete.art</a>.
+        </p>
+        <p class="site-footer__credit">HTML5 · CSS · JavaScript</p>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
+

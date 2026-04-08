@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diseño sin dogmas · Blog</title>
+    <meta
+      name="description"
+      content="Diseño sin dogmas: lo apolíneo, lo dionisíaco y la innovación — post del blog."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="matrix">
+    <canvas class="matrix-bg" id="matrix-bg" aria-hidden="true"></canvas>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <div class="shell site-header__inner">
+        <a class="site-logo" href="index.html#contenido" aria-label="Zoquete — inicio">
+          <img
+            src="https://zoquete.art/_assets/v11/9185ae14764cab062f03e8050393ebe42ece86bc.png"
+            width="60"
+            height="54"
+            alt="Logo zoquete"
+          />
+        </a>
+        <button
+          type="button"
+          class="site-nav__toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="visually-hidden">Abrir o cerrar menú</span>
+          <span class="site-nav__toggle-bars" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Principal">
+          <a href="index.html#sobre-mi">Sobre mí</a>
+          <a href="index.html#proyectos">Ver proyectos</a>
+          <a href="index.html#recomendaciones">Recomendaciones</a>
+          <a href="blog.html">Blog</a>
+          <a href="index.html#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="case section" aria-labelledby="post-title">
+        <div class="shell case__inner js-reveal">
+          <a class="case__back" href="blog.html">Volver</a>
+          <h1 id="post-title" class="case__title">
+            Diseño sin dogmas: lo apolíneo, lo dionisíaco y la innovación
+          </h1>
+          <p class="case__subhead">2025 · Zoquete</p>
+          <figure class="case__figure">
+            <img
+              src="https://zoquete.art/_assets/v11/d9760318e1eb1146e659f58d32da3bcb1d63decf.png"
+              alt="Project"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+
+          <p>¿Qué tiene que ver Nietzsche con diseñar un flujo?</p>
+          <p>
+            Tanto la filosofía como el diseño buscan entender y transformar la realidad. Hoy, no
+            solo soluciona problemas: crea valores, hábitos y formas de vivir.
+          </p>
+          <p>
+            Nietzsche decía que la moral tradicional aplasta la creatividad individual. Muchos
+            productos se diseñan “por consenso”, sin coraje creativo. El diseñador obediente sigue
+            métricas o realiza benchmarks sin cuestionar su sentido. En cambio, el diseñador creador
+            se atreve a romper paradigmas, a desafiar lo “estándar” cuando la experiencia lo exige.
+          </p>
+
+          <h2 class="case__h2">Diseñar no es solo hacer cosas usables</h2>
+          <p>Es decidir qué merece existir.</p>
+          <p>
+            Para Nietzsche, la vida es expansión, energía, voluntad de poder —no dominio sobre otros,
+            sino autoafirmación y crecimiento.
+          </p>
+          <p>
+            El diseñador que no solo resuelve sino que propone; que no solo reacciona al brief, sino
+            que incide en la dirección del producto. Diseñar no es complacer, sino afirmar una visión
+            sobre cómo debería ser la experiencia humana con la tecnología.
+          </p>
+
+          <h2 class="case__h2">Apolíneo y dionisíaco</h2>
+          <p>
+            Nietzsche plantea dos fuerzas: Apolíneo (orden, estructura, racionalidad) y lo dionisíaco
+            (caos, emoción, intuición, creatividad).
+          </p>
+          <p>
+            En Figma, somos apolíneos (componentes, design systems, grillas). Pero la verdadera
+            innovación requiere momentos dionisíacos (ideación, empatía, exploración).
+          </p>
+          <ul class="case__list">
+            <li>
+              Los design systems no deben ser cárceles, sino herramientas al servicio de la creatividad.
+              Si no contamos algún componente podemos innovar y buscar la mejor opción posible.
+            </li>
+          </ul>
+
+          <h2 class="case__h2">El Übermensch en diseño</h2>
+          <p>En diseño, sería aquel profesional que:</p>
+          <ul class="case__list">
+            <li>No diseña solo para métricas, sino para transformar una experiencia humana.</li>
+            <li>No repite lo aprendido, sino crea nuevos estándares.</li>
+            <li>Además de buscar el éxito de producto, también busca dar sentido a lo que crea.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell site-footer__inner">
+        <p>
+          © <span id="year"></span> Felipe Maluenda. Contenido tomado de
+          <a
+            href="https://zoquete.art/dise%C3%B1o-sin-dogma"
+            target="_blank"
+            rel="noopener noreferrer"
+            >zoquete.art</a
+          >.
+        </p>
+        <p class="site-footer__credit">HTML5 · CSS · JavaScript</p>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
+

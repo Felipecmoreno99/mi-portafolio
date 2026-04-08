@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cómo comunicar diseño · Blog</title>
+    <meta name="description" content="Cómo comunicar diseño sin mostrar pantallas — post del blog." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="matrix">
+    <canvas class="matrix-bg" id="matrix-bg" aria-hidden="true"></canvas>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <div class="shell site-header__inner">
+        <a class="site-logo" href="index.html#contenido" aria-label="Zoquete — inicio">
+          <img src="https://zoquete.art/_assets/v11/9185ae14764cab062f03e8050393ebe42ece86bc.png" width="60" height="54" alt="Logo zoquete" />
+        </a>
+        <button type="button" class="site-nav__toggle" aria-expanded="false" aria-controls="site-nav">
+          <span class="visually-hidden">Abrir o cerrar menú</span>
+          <span class="site-nav__toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Principal">
+          <a href="index.html#sobre-mi">Sobre mí</a>
+          <a href="index.html#proyectos">Ver proyectos</a>
+          <a href="index.html#recomendaciones">Recomendaciones</a>
+          <a href="blog.html">Blog</a>
+          <a href="index.html#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="case section" aria-labelledby="post-title">
+        <div class="shell case__inner js-reveal">
+          <a class="case__back" href="blog.html">Volver</a>
+          <h1 id="post-title" class="case__title">Cómo comunicar diseño sin mostrar pantallas</h1>
+          <p class="case__subhead">2025 · Zoquete</p>
+          <figure class="case__figure">
+            <img src="https://zoquete.art/_assets/v11/1724754c4222246f2fe69d9f4d41986fc9db5f98.png" alt="Project" loading="lazy" decoding="async" />
+          </figure>
+
+          <p>
+            ¿Te ha pasado que, después de días ajustando un flujo, puliendo la tipografía y pensando el microcopy perfecto para el usuario perfecto, llega la demo y todo parece ir bien… hasta que alguien dice:
+          </p>
+          <p>“Sí, está bonito, pero… ¿por qué esto importa?”</p>
+
+          <h2 class="case__h2">Mostrar pantallas no es lo mismo que comunicar diseño</h2>
+          <p>
+            Una pantalla es solo el resultado; no la historia. El error común es pensar que los stakeholders verán todo lo que se pensó detrás. Spoiler: no lo harán.
+          </p>
+
+          <h2 class="case__h2">Contar el contexto, no el componente</h2>
+          <p>
+            Comunicar diseño es narrar decisiones con impacto. “El usuario no entendía si la acción era reversible, así que se cambió el texto del botón…”
+          </p>
+
+          <h2 class="case__h2">Estrategia &gt; Estética</h2>
+          <p>
+            Qué problema se resolvió. Qué hipótesis se validó. Qué resultado se obtuvo (o se espera obtener). Qué decisiones siguen abiertas.
+          </p>
+
+          <h2 class="case__h2">Diseñar es traducir</h2>
+          <p>
+            Traducir entre el lenguaje del usuario y el del negocio. Si el equipo entiende por qué importa, recién ahí las pantallas comienzan a tener sentido.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell site-footer__inner">
+        <p>
+          © <span id="year"></span> Felipe Maluenda. Contenido tomado de
+          <a
+            href="https://zoquete.art/C%C3%B3mo-comunicar-dise%C3%B1o-sin-mostrar-pantallas"
+            target="_blank"
+            rel="noopener noreferrer"
+            >zoquete.art</a
+          >.
+        </p>
+        <p class="site-footer__credit">HTML5 · CSS · JavaScript</p>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
+

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aprender afuera, mejorar adentro · Zoquete's Portafolio</title>
+    <meta name="description" content="Caso: Aprender afuera, mejorar adentro — Benchmark." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="matrix">
+    <canvas class="matrix-bg" id="matrix-bg" aria-hidden="true"></canvas>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <div class="shell site-header__inner">
+        <a class="site-logo" href="index.html#contenido" aria-label="Zoquete — inicio">
+          <img
+            src="https://zoquete.art/_assets/v11/9185ae14764cab062f03e8050393ebe42ece86bc.png"
+            width="60"
+            height="54"
+            alt="Logo zoquete"
+          />
+        </a>
+        <button
+          type="button"
+          class="site-nav__toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="visually-hidden">Abrir o cerrar menú</span>
+          <span class="site-nav__toggle-bars" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Principal">
+          <a href="index.html#sobre-mi">Sobre mí</a>
+          <a href="index.html#proyectos">Ver proyectos</a>
+          <a href="index.html#recomendaciones">Recomendaciones</a>
+          <a href="blog.html">Blog</a>
+          <a href="index.html#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="case section" aria-labelledby="case-title">
+        <div class="shell case__inner js-reveal">
+          <a class="case__back" href="index.html#proyectos">Volver</a>
+
+          <h1 id="case-title" class="case__title">Aprender afuera, mejorar adentro</h1>
+
+          <figure class="case__figure">
+            <img
+              src="https://zoquete.art/_assets/v11/3857f5ca2680e53be2f57a97488df1cf0e48a7c7.png"
+              alt="Project"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+
+          <p class="case__lead">
+            El Benchmark Estratégico nació como una metodología interna para transformar la
+            observación de competidores en decisiones de producto informadas y accionables. El
+            objetivo fue establecer un marco claro y replicable que permitiera a los equipos de
+            Cumplo —diseño, producto y tecnología— evaluar la experiencia de otras fintechs con
+            rigor y propósito, alineando la inspiración con los objetivos del negocio.
+          </p>
+
+          <h2 class="case__h2">Problemas en el camino</h2>
+          <p>
+            En múltiples procesos de diseño, los benchmarks se realizaban de forma intuitiva y
+            desestructurada. Cada diseñador comparaba productos según su propio criterio, lo que
+            generaba:
+          </p>
+          <ul class="case__list">
+            <li>Hallazgos poco comparables entre proyectos.</li>
+            <li>Decisiones subjetivas, difíciles de defender frente a stakeholders.</li>
+            <li>
+              Pérdida de valor estratégico, ya que el benchmark terminaba siendo solo “referencia
+              visual”, no un insumo para la priorización.
+            </li>
+          </ul>
+          <p>
+            Era necesario pasar de una práctica exploratoria a una metodología estandarizada y con
+            impacto tangible en las decisiones de diseño y negocio.
+          </p>
+
+          <h2 class="case__h2">El desafío</h2>
+          <p>
+            El desafío fue diseñar una metodología paso a paso, fácil de replicar, que transformara
+            la inspiración competitiva en insight, priorización y acción. La meta: construir una
+            herramienta interna de diseño estratégico que ayudara a:
+          </p>
+          <ul class="case__list">
+            <li>Guiar benchmarks más consistentes.</li>
+            <li>Fomentar la colaboración interdisciplinaria.</li>
+            <li>
+              Facilitar la argumentación frente a stakeholders mediante evidencia visual y
+              comparada.
+            </li>
+          </ul>
+
+          <h2 class="case__h2">Proceso de diseño y negociación</h2>
+          <p>El proceso se estructuró en 10 pasos iterativos, concebidos como una guía práctica y visual:</p>
+
+          <ol class="case__list case__list--ordered">
+            <li>
+              Definir el objetivo Comenzar con una pregunta clara: ¿Qué queremos aprender o mejorar?
+              (claridad, interacción, comunicación, tono visual, etc.). Ejemplo: “Mejorar la
+              jerarquía visual y la claridad de datos financieros.”
+            </li>
+            <li>
+              Seleccionar plataformas Analizar entre 3 y 5 referentes (locales, internacionales y
+              aspiracionales). Ejemplo: Tyba, Fintual, Nubank, Revolut, Brex.
+            </li>
+            <li>
+              Definir criterios de evaluaciónCrear una rúbrica base con variables comunes: claridad
+              visual, navegación, filtros, tono de marca, mobile responsive, etc.
+            </li>
+            <li>
+              Capturar pantallas clave Documentar visualmente: pantallas principales, estados
+              vacíos, móviles y desktop.
+            </li>
+            <li>
+              Analizar casos y anotar hallazgos Para cada plataforma: Qué hace bien, qué podríamos
+              adaptar, qué evitar, insight clave y propuesta aplicable. Etiquetas: Inspirador | ️Fricción
+              | Idea aplicable
+            </li>
+            <li>
+              Organizar comparativa visualCrear un tablero colaborativo (Miro/FigJam) con una fila
+              por producto y una columna por sección, fomentando discusiones visuales rápidas.
+            </li>
+            <li>Extraer conclusiones por secciónSintetizar patrones comunes y quick wins.</li>
+            <li>Proponer mejoras con criterio Asociar cada idea a impacto, esfuerzo y prioridad.</li>
+            <li>
+              Presentar hallazgos visualmente Consolidar todo en Slides o Notion con evidencia
+              visual, rubrica, hallazgos clave y propuestas priorizadas.
+            </li>
+            <li>
+              Incorporar al backlog Integrar mejoras en el roadmap o en test con usuarios,
+              manteniendo trazabilidad desde el benchmark hasta la ejecución.
+            </li>
+          </ol>
+
+          <p>
+            Durante la implementación, se negoció con PMs y negocio para validar el valor del
+            proceso como insumo estratégico, no solo exploratorio. La clave estuvo en mostrar
+            evidencia visual comparada y cómo esa información podía traducirse en ROI o mejoras de
+            experiencia medibles.
+          </p>
+
+          <h2 class="case__h2">Solución final</h2>
+          <p>
+            El resultado fue la creación de una metodología interna de Benchmark Estratégico,
+            documentada en formato replicable para futuros proyectos. Este framework permitió:
+          </p>
+          <ul class="case__list">
+            <li>Estandarizar la práctica de benchmark en todo el equipo de diseño de Cumplo.</li>
+            <li>Reducir un 40% el tiempo necesario para preparar comparativas competitivas.</li>
+            <li>
+              Aumentar en 60% la calidad de la evidencia presentada a stakeholders, según encuestas
+              internas post-proyecto.
+            </li>
+            <li>
+              Transformar la percepción del benchmark: de ejercicio visual a herramienta estratégica
+              de decisión.
+            </li>
+          </ul>
+          <p>
+            Además, la metodología fue adoptada por otros equipos como referencia para research
+            competitivo, priorización de features y validación temprana de hipótesis.
+          </p>
+          <p>
+            En definitiva, este enfoque convirtió el benchmark en un lenguaje compartido entre
+            diseño, negocio y tecnología, donde cada observación externa se traduce en una acción
+            concreta dentro del producto.
+          </p>
+
+          <h2 class="case__h2">Plantilla</h2>
+          <p>
+            El resultado fue la creación de una metodología interna de Benchmark Estratégico,
+            documentada en formato replicable para futuros proyectos. Este framework permitió:
+          </p>
+          <ul class="case__list">
+            <li>Estandarizar la práctica de benchmark en todo el equipo de diseño de Cumplo.</li>
+            <li>Reducir un 40% el tiempo necesario para preparar comparativas competitivas.</li>
+            <li>
+              Aumentar en 60% la calidad de la evidencia presentada a stakeholders, según encuestas
+              internas post-proyecto.
+            </li>
+            <li>
+              Transformar la percepción del benchmark: de ejercicio visual a herramienta estratégica
+              de decisión.
+            </li>
+          </ul>
+          <p>
+            Además, la metodología fue adoptada por otros equipos como referencia para research
+            competitivo, priorización de features y validación temprana de hipótesis.
+          </p>
+          <p>
+            En definitiva, este enfoque convirtió el benchmark en un lenguaje compartido entre
+            diseño, negocio y tecnología, donde cada observación externa se traduce en una acción
+            concreta dentro del producto.
+          </p>
+        </div>
+      </section>
+
+      <section id="contacto" class="contact section" aria-labelledby="contacto-title">
+        <div class="shell contact__inner contact__inner--panel js-reveal">
+          <h2 id="contacto-title" class="contact__title">Contactame</h2>
+          <ul class="contact__list" role="list">
+            <li class="contact__item">
+              <a
+                class="contact__channel"
+                href="https://www.instagram.com/zoquete_/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="contact__icon" aria-hidden="true">
+                  <img
+                    src="https://zoquete.art/_assets/v11/ff8e981f14042c53a54a9b0c433c0758e2ee8b96.png"
+                    width="48"
+                    height="48"
+                    alt=""
+                    loading="lazy"
+                  />
+                </span>
+                <span class="contact__lines">
+                  <span class="contact__primary">@zoquete_</span>
+                  <span class="contact__secondary">Instagram</span>
+                </span>
+              </a>
+            </li>
+            <li class="contact__item">
+              <a
+                class="contact__channel"
+                href="https://www.linkedin.com/in/felipe-maluenda/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="contact__icon" aria-hidden="true">
+                  <img
+                    src="https://zoquete.art/_assets/v11/95ffb684987f6e4a611d840867ede9fae4faa05b.png"
+                    width="48"
+                    height="48"
+                    alt=""
+                    loading="lazy"
+                  />
+                </span>
+                <span class="contact__lines">
+                  <span class="contact__primary">Felipe Maluenda 👾</span>
+                  <span class="contact__secondary">Linkedin</span>
+                </span>
+              </a>
+            </li>
+            <li class="contact__item">
+              <a class="contact__channel" href="tel:+56967217619">
+                <span class="contact__icon" aria-hidden="true">
+                  <img
+                    src="https://zoquete.art/_assets/v11/5b8a93e47b0acab025d360690633964bf8afa076.png"
+                    width="48"
+                    height="48"
+                    alt=""
+                    loading="lazy"
+                  />
+                </span>
+                <span class="contact__lines">
+                  <span class="contact__primary">+569 6721 7619</span>
+                  <span class="contact__secondary">Telefono</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell site-footer__inner">
+        <p>
+          © <span id="year"></span> Felipe Maluenda. Contenido tomado de
+          <a href="https://zoquete.art/benchmark" target="_blank" rel="noopener noreferrer">zoquete.art</a
+          >.
+        </p>
+        <p class="site-footer__credit">HTML5 · CSS · JavaScript</p>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>

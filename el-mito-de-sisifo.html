@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El mito de Sísifo · Blog</title>
+    <meta
+      name="description"
+      content="El mito de Sísifo y el ciclo infinito del diseño — post del blog."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="matrix">
+    <canvas class="matrix-bg" id="matrix-bg" aria-hidden="true"></canvas>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <div class="shell site-header__inner">
+        <a class="site-logo" href="index.html#contenido" aria-label="Zoquete — inicio">
+          <img
+            src="https://zoquete.art/_assets/v11/9185ae14764cab062f03e8050393ebe42ece86bc.png"
+            width="60"
+            height="54"
+            alt="Logo zoquete"
+          />
+        </a>
+        <button
+          type="button"
+          class="site-nav__toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="visually-hidden">Abrir o cerrar menú</span>
+          <span class="site-nav__toggle-bars" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Principal">
+          <a href="index.html#sobre-mi">Sobre mí</a>
+          <a href="index.html#proyectos">Ver proyectos</a>
+          <a href="index.html#recomendaciones">Recomendaciones</a>
+          <a href="blog.html">Blog</a>
+          <a href="index.html#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="case section" aria-labelledby="post-title">
+        <div class="shell case__inner js-reveal">
+          <a class="case__back" href="blog.html">Volver</a>
+          <h1 id="post-title" class="case__title">
+            El mito de Sísifo y el ciclo infinito del diseño
+          </h1>
+          <p class="case__subhead">2025 · Zoquete</p>
+          <figure class="case__figure">
+            <img
+              src="https://zoquete.art/_assets/v11/5841b080045f2c57e9da257fba50812908b33563.png"
+              alt="Project"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+
+          <h2 class="case__h2">Diseñar desde el absurdo</h2>
+          <p>
+            El absurdismo parte de una tensión inevitable: el ser humano busca sentido en un mundo
+            que no lo tiene intrínsecamente. Albert Camus lo explicó con una claridad que todavía
+            incomoda: vivimos preguntando por qué, en un universo que no responde.
+          </p>
+
+          <h2 class="case__h2">Diseñando la tensión se vuelve práctica</h2>
+          <p>
+            Intentamos dar sentido a problemas ambiguos, resolver dolores que cambian de nombre cada
+            trimestre, crear orden donde todo parece moverse sin aviso.
+          </p>
+          <p>
+            “El absurdo nace de la confrontación entre la búsqueda humana de sentido y el silencio
+            irracional del mundo.” – Albert Camus
+          </p>
+
+          <h2 class="case__h2">El mito de Sísifo y el ciclo del diseño</h2>
+          <p>
+            Investigar → idear → prototipar → testear → iterar → volver a empezar. El ciclo no se
+            cierra nunca. Solo cambia de nombre.
+          </p>
+
+          <h2 class="case__h2">Rebelión como respuesta</h2>
+          <p>
+            La rebelión del diseñador no consiste en romper nada, sino en seguir diseñando a
+            conciencia. Sabiendo que el sentido no está garantizado, igual dibuja, prueba, corrige.
+          </p>
+
+          <h2 class="case__h2">Diseñar como acto de lucidez</h2>
+          <p>
+            Camus decía que la libertad aparece cuando aceptamos el absurdo sin rendirnos ante él.
+            Diseñar es un poco eso: actuar con lucidez.
+          </p>
+          <p>Hay que imaginar al diseñador feliz.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell site-footer__inner">
+        <p>
+          © <span id="year"></span> Felipe Maluenda. Contenido tomado de
+          <a href="https://zoquete.art/el-mito-de-sisifo" target="_blank" rel="noopener noreferrer"
+            >zoquete.art</a
+          >.
+        </p>
+        <p class="site-footer__credit">HTML5 · CSS · JavaScript</p>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
+

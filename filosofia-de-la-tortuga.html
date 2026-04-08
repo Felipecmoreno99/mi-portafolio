@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La filosofía de la tortuga · Blog</title>
+    <meta name="description" content="La filosofía de la tortuga: diseñar sin hacer nada — post del blog." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="matrix">
+    <canvas class="matrix-bg" id="matrix-bg" aria-hidden="true"></canvas>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <div class="shell site-header__inner">
+        <a class="site-logo" href="index.html#contenido" aria-label="Zoquete — inicio">
+          <img src="https://zoquete.art/_assets/v11/9185ae14764cab062f03e8050393ebe42ece86bc.png" width="60" height="54" alt="Logo zoquete" />
+        </a>
+        <button type="button" class="site-nav__toggle" aria-expanded="false" aria-controls="site-nav">
+          <span class="visually-hidden">Abrir o cerrar menú</span>
+          <span class="site-nav__toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Principal">
+          <a href="index.html#sobre-mi">Sobre mí</a>
+          <a href="index.html#proyectos">Ver proyectos</a>
+          <a href="index.html#recomendaciones">Recomendaciones</a>
+          <a href="blog.html">Blog</a>
+          <a href="index.html#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="case section" aria-labelledby="post-title">
+        <div class="shell case__inner js-reveal">
+          <a class="case__back" href="blog.html">Volver</a>
+          <h1 id="post-title" class="case__title">La filosofía de la tortuga: diseñar sin hacer nada</h1>
+          <p class="case__subhead">2025 · Zoquete</p>
+          <figure class="case__figure">
+            <img src="https://zoquete.art/_assets/v11/97700343ef769e65ed0bc275168ad1c65d6a44f1.png" alt="Project" loading="lazy" decoding="async" />
+          </figure>
+
+          <p>
+            Vivimos en una época donde todo parece urgente. Todo tiene que estar para ayer, todo tiene que tener impacto, todo debe ser “entregable”.
+          </p>
+          <p>
+            Yo, por ejemplo, salgo a caminar. Sin destino. Sin playlist productiva. Solo camino, como quien le da una segunda oportunidad al aire.
+          </p>
+
+          <h2 class="case__h2">La filosofía de la tortuga</h2>
+          <p>
+            El maestro Roshi —ese viejo de Dragon Ball— entendía algo: el crecimiento ocurre en los silencios. El descanso no es lo opuesto al esfuerzo; es parte del esfuerzo.
+          </p>
+
+          <h2 class="case__h2">El diseño invisible</h2>
+          <p>
+            Hay un tipo de diseño que no se ve en las pantallas: el diseño que ocurre mientras pensamos, dudamos o caminamos.
+          </p>
+
+          <h2 class="case__h2">Diseñar sin hacer nada</h2>
+          <p>
+            A veces, el diseño también es saber no resolverlos todavía. Mientras el mundo te grita “produce”, el buen diseñador entiende que también hay valor en la pausa.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell site-footer__inner">
+        <p>
+          © <span id="year"></span> Felipe Maluenda. Contenido tomado de
+          <a href="https://zoquete.art/filosofia-de-la-tortuga" target="_blank" rel="noopener noreferrer">zoquete.art</a>.
+        </p>
+        <p class="site-footer__credit">HTML5 · CSS · JavaScript</p>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
+

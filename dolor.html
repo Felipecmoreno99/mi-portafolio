@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El dolor como punto de partida · Zoquete's Portafolio</title>
+    <meta name="description" content="El dolor como punto de partida — portada en estética Matrix." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="matrix">
+    <canvas class="matrix-bg" id="matrix-bg" aria-hidden="true"></canvas>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <div class="shell site-header__inner">
+        <a class="site-logo" href="index.html#contenido" aria-label="Zoquete — inicio">
+          <img
+            src="https://zoquete.art/_assets/v11/9185ae14764cab062f03e8050393ebe42ece86bc.png"
+            width="60"
+            height="54"
+            alt="Logo zoquete"
+          />
+        </a>
+        <button
+          type="button"
+          class="site-nav__toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="visually-hidden">Abrir o cerrar menú</span>
+          <span class="site-nav__toggle-bars" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Principal">
+          <a href="index.html#sobre-mi">Sobre mí</a>
+          <a href="index.html#proyectos">Ver proyectos</a>
+          <a href="index.html#recomendaciones">Recomendaciones</a>
+          <a href="blog.html">Blog</a>
+          <a href="index.html#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="case section" aria-labelledby="case-title">
+        <div class="shell case__inner js-reveal">
+          <a class="case__back" href="index.html#proyectos">Volver</a>
+          <h1 id="case-title" class="case__title">El dolor como punto de partida</h1>
+          <figure class="case__figure">
+            <img
+              src="https://zoquete.art/_assets/v11/b57179df4b9981d340409b1e940fce249bb2139c.png"
+              alt="Project"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <p class="case__lead">
+            Este ítem aparece como tarjeta en la portada de <a href="https://zoquete.art" target="_blank" rel="noopener noreferrer">zoquete.art</a>,
+            pero no tiene una ruta pública asociada (no existe un enlace publicado para navegar a un detalle).
+          </p>
+        </div>
+      </section>
+
+      <section id="contacto" class="contact section" aria-labelledby="contacto-title">
+        <div class="shell contact__inner contact__inner--panel js-reveal">
+          <h2 id="contacto-title" class="contact__title">Contactame</h2>
+          <ul class="contact__list" role="list">
+            <li class="contact__item">
+              <a
+                class="contact__channel"
+                href="https://www.instagram.com/zoquete_/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="contact__icon" aria-hidden="true">
+                  <img
+                    src="https://zoquete.art/_assets/v11/ff8e981f14042c53a54a9b0c433c0758e2ee8b96.png"
+                    width="48"
+                    height="48"
+                    alt=""
+                    loading="lazy"
+                  />
+                </span>
+                <span class="contact__lines">
+                  <span class="contact__primary">@zoquete_</span>
+                  <span class="contact__secondary">Instagram</span>
+                </span>
+              </a>
+            </li>
+            <li class="contact__item">
+              <a
+                class="contact__channel"
+                href="https://www.linkedin.com/in/felipe-maluenda/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="contact__icon" aria-hidden="true">
+                  <img
+                    src="https://zoquete.art/_assets/v11/95ffb684987f6e4a611d840867ede9fae4faa05b.png"
+                    width="48"
+                    height="48"
+                    alt=""
+                    loading="lazy"
+                  />
+                </span>
+                <span class="contact__lines">
+                  <span class="contact__primary">Felipe Maluenda 👾</span>
+                  <span class="contact__secondary">Linkedin</span>
+                </span>
+              </a>
+            </li>
+            <li class="contact__item">
+              <a class="contact__channel" href="tel:+56967217619">
+                <span class="contact__icon" aria-hidden="true">
+                  <img
+                    src="https://zoquete.art/_assets/v11/5b8a93e47b0acab025d360690633964bf8afa076.png"
+                    width="48"
+                    height="48"
+                    alt=""
+                    loading="lazy"
+                  />
+                </span>
+                <span class="contact__lines">
+                  <span class="contact__primary">+569 6721 7619</span>
+                  <span class="contact__secondary">Telefono</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell site-footer__inner">
+        <p>
+          © <span id="year"></span> Felipe Maluenda. Contenido tomado de
+          <a href="https://zoquete.art" target="_blank" rel="noopener noreferrer">zoquete.art</a>.
+        </p>
+        <p class="site-footer__credit">HTML5 · CSS · JavaScript</p>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
+
