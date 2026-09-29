@@ -3,32 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zoquete's Portafolio</title>
+    <title>Felipe Maluenda — Product Designer</title>
     <meta
       name="description"
-      content="Felipe Maluenda – Product Designer. Enfoque estratégico en fintech, banca y B2B. Research, diseño mobile-first y sistemas de diseño."
+      content="Felipe Maluenda — Product Designer con enfoque estratégico en fintech, banca y B2B. Research, diseño mobile-first y sistemas de diseño."
     />
+    <link rel="icon" href="img/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="matrix">
-    <canvas class="matrix-bg" id="matrix-bg" aria-hidden="true"></canvas>
+  <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
     <header class="site-header">
       <div class="shell site-header__inner">
         <a class="site-logo" href="#contenido" aria-label="Zoquete — inicio">
-          <img
-            src="https://zoquete.art/_assets/v11/9185ae14764cab062f03e8050393ebe42ece86bc.png"
-            width="60"
-            height="54"
-            alt="Logo zoquete"
-          />
+          <img src="img/logo.png" width="60" height="54" alt="Logo zoquete" />
         </a>
         <button
           type="button"
@@ -38,392 +33,212 @@
         >
           <span class="visually-hidden">Abrir o cerrar menú</span>
           <span class="site-nav__toggle-bars" aria-hidden="true">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span>
           </span>
         </button>
         <nav id="site-nav" class="site-nav" aria-label="Principal">
           <a href="#sobre-mi">Sobre mí</a>
           <a href="#proyectos">Ver proyectos</a>
           <a href="#recomendaciones">Recomendaciones</a>
-          <a href="blog.html">Blog</a>
           <a href="#contacto">Contacto</a>
+          <span class="nav-sep" aria-hidden="true"></span>
+          <a href="blog.html">Blog</a>
         </nav>
       </div>
     </header>
 
     <main id="contenido">
+      <!-- HERO -->
       <section class="hero section" aria-labelledby="hero-title">
         <div class="shell hero__inner js-reveal">
-          <div class="hero__intro">
-            <div class="hero__avatar-wrap">
-              <img
-                class="hero__avatar"
-                src="https://zoquete.art/_assets/v11/4a6aaa1df7da98a74b8e8734b820c834b4cb75d8.png"
-                width="160"
-                height="160"
-                alt="Soy io"
-              />
-            </div>
-            <div class="hero__copy">
-              <h1 id="hero-title" class="hero__title">Felipe Maluenda – Product Designer</h1>
-              <p class="hero__lead">
-                Product Designer con enfoque estratégico y experiencia en fintech, banca y B2B.
-                Especialista en research, diseño mobile-first, sistemas de diseño y mejora de
-                plataformas.
+          <img class="hero__avatar" src="img/avatar.png" alt="Foto de Felipe Maluenda" />
+          <h1 class="hero__title" id="hero-title">Felipe Maluenda – Product Designer</h1>
+          <p class="hero__subtitle">
+            Product Designer con enfoque estratégico y experiencia en fintech, banca y B2B.
+            Especialista en research, diseño mobile-first, sistemas de diseño y mejora de plataformas.
+          </p>
+          <a
+            class="btn btn--secondary"
+            href="https://drive.google.com/file/d/1NhBALAQVQkAoaPDNmXw7rrUhyUbMbz4O/view?usp=sharing"
+            target="_blank"
+            rel="noopener"
+            >Descargar CV</a
+          >
+        </div>
+      </section>
+
+      <!-- SOBRE MÍ -->
+      <section class="section" id="sobre-mi" aria-labelledby="about-title">
+        <div class="shell about__grid js-reveal">
+          <img class="about__photo" src="img/sobre-mi.png" alt="Felipe Maluenda" />
+          <div class="about__body">
+            <h2 id="about-title">Sobre mí</h2>
+            <p>
+              Me apasiona el diseño de producto porque me permite generar un impacto real en la vida
+              de las personas. Me especialicé en el sector financiero, convencido de que “cuentas
+              claras mantienen la amistad” y que la transparencia entrega confianza y seguridad a los
+              usuarios.
+            </p>
+            <p>
+              Fuera del trabajo soy fanático del fútbol ⚽ (hincha de Cobreloa), de los videojuegos y
+              el trekking. Disfruto llevar una vida tranquila junto a mi polola, entre series y paseos
+              por Santiago.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CASOS DE ÉXITO -->
+      <section class="section" id="proyectos" aria-labelledby="cases-title">
+        <div class="shell js-reveal">
+          <h2 class="section-title" id="cases-title">Casos de éxito</h2>
+          <div class="cases__grid">
+            <a class="case-card" href="dolor.html">
+              <img class="case-card__thumb" src="img/caso-1.png" alt="El dolor como punto de partida" />
+              <h3 class="case-card__title">El dolor como punto de partida</h3>
+              <span class="case-card__more">Ver más
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </a>
+            <a class="case-card" href="parallel-ds.html">
+              <img class="case-card__thumb" src="img/caso-2.png" alt="Diseñar orden para crear valor" />
+              <h3 class="case-card__title">Diseñar orden para crear valor</h3>
+              <span class="case-card__more">Ver más
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </a>
+            <a class="case-card" href="estu-dia.html">
+              <img class="case-card__thumb" src="img/caso-3.png" alt="El diseño como guía en la búsqueda" />
+              <h3 class="case-card__title">El diseño como guía en la búsqueda</h3>
+              <span class="case-card__more">Ver más
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </a>
+            <a class="case-card" href="dily.html">
+              <img class="case-card__thumb" src="img/caso-4.png" alt="Diseñar menos para convertir más" />
+              <h3 class="case-card__title">Diseñar menos para convertir más</h3>
+              <span class="case-card__more">Ver más
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </a>
+            <a class="case-card" href="scraping.html">
+              <img class="case-card__thumb" src="img/caso-5.png" alt="Automatizar para asegurar la verdad" />
+              <h3 class="case-card__title">Automatizar para asegurar la verdad</h3>
+              <span class="case-card__more">Ver más
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </a>
+            <a class="case-card" href="benchmark.html">
+              <img class="case-card__thumb" src="img/caso-6.png" alt="Aprender afuera, mejorar adentro" />
+              <h3 class="case-card__title">Aprender afuera, mejorar adentro</h3>
+              <span class="case-card__more">Ver más
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- RECOMENDACIONES -->
+      <section class="section" id="recomendaciones" aria-labelledby="recs-title">
+        <div class="shell js-reveal">
+          <h2 class="section-title" id="recs-title">Recomendaciones</h2>
+          <div class="recs__grid">
+            <article class="rec-card">
+              <p class="rec-card__quote">
+                Felipe es un profesional que le gusta estar actualizado, gusta del buen diseño y de
+                generar comunidad en el mundo de UX. Tuve la oportunidad de trabajar con él en
+                Cencosud y desde nuestra primera interacción manifestó ser un profesional
+                comprometido, eficiente, con dominio de Figma y con un gran sentido del trabajo en
+                equipo. Trabajar con él en ambientes ágiles se vuelve una ayuda indispensable.
               </p>
-              <a
-                class="hero__cta hero__cta--cv"
-                href="https://drive.google.com/file/d/1NhBALAQVQkAoaPDNmXw7rrUhyUbMbz4O/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Descargar CV
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="sobre-mi" class="about section" aria-labelledby="sobre-title">
-        <div class="shell about__inner js-reveal">
-          <div class="about__media">
-            <img
-              src="https://zoquete.art/_assets/v11/ba15f8584adeccfb0305368c90c07a82f17895d0.png"
-              width="768"
-              height="576"
-              alt="Soy io pero chiquito"
-              loading="lazy"
-            />
-          </div>
-          <div class="about__text">
-            <h2 id="sobre-title" class="about__title">Sobre mí</h2>
-            <div class="about__body">
-              <p>
-                Me apasiona el diseño de producto porque me permite generar un impacto real en la
-                vida de las personas. Me especialicé en el sector financiero, convencido de que
-                “cuentas claras mantienen la amistad” y que la transparencia entrega confianza y
-                seguridad a los usuarios.
+              <div class="rec-card__author">
+                <img class="rec-card__avatar" src="img/rec-1.png" alt="" />
+                <div>
+                  <div class="rec-card__name">Christian Alejandro Díaz</div>
+                  <div class="rec-card__role">UX Designer · Cencosud</div>
+                </div>
+              </div>
+            </article>
+            <article class="rec-card">
+              <p class="rec-card__quote">
+                Trabajé junto a Felipe en Dily y la verdad es que solo puedo decir buenas cosas sobre
+                él. Además de ser un excelente profesional y team player, es una excelente persona.
+                Desde el día uno me sentí acogida; se preocupó de que fuéramos un equipo sólido y de
+                que nos tuviéramos la confianza para darnos feedback constructivo y apoyarnos. Y no
+                solo conmigo: se preocupó de conocer y escuchar a todos sus pares, logrando formar un
+                equipo unido. 🙌🏽
               </p>
-              <p>
-                Fuera del trabajo soy fanático del fútbol ⚽ (hincha de Cobreloa), de los
-                videojuegos y el trekking. Disfruto llevar una vida tranquila junto a mi polola,
-                entre series y paseos por Santiago.
+              <div class="rec-card__author">
+                <img class="rec-card__avatar" src="img/rec-2.png" alt="" />
+                <div>
+                  <div class="rec-card__name">María José Gondonneau A.</div>
+                  <div class="rec-card__role">Product Designer · Dily</div>
+                </div>
+              </div>
+            </article>
+            <article class="rec-card">
+              <p class="rec-card__quote">
+                Tuve la suerte de trabajar con Felipe y no puedo dejar de recomendarlo como
+                profesional y persona. Es de esas personas que siempre van un paso más allá de lo que
+                se espera: es proactivo, comprometido y con una capacidad increíble para encontrar
+                soluciones, creativas o estratégicas. Lo que más destaco es su disposición constante a
+                ayudar y sumar valor al equipo.
               </p>
-            </div>
+              <div class="rec-card__author">
+                <img class="rec-card__avatar" src="img/rec-3.png" alt="" />
+                <div>
+                  <div class="rec-card__name">Fernanda Robalino</div>
+                  <div class="rec-card__role">Estratega de Marketing · Dily</div>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <section id="proyectos" class="projects section" aria-labelledby="proyectos-title">
-        <div class="shell projects__inner">
-          <h2 id="proyectos-title" class="projects__title projects__title--solo js-reveal">
-            Casos de éxito
-          </h2>
-
-          <ul class="project-grid" role="list">
-            <li class="js-reveal">
-              <article class="project-card">
-                <a
-                  class="project-card__link"
-                  href="dolor.html"
-                >
-                  <div class="project-card__thumb">
-                    <img
-                      src="https://zoquete.art/_assets/v11/b57179cacc96bde848f741bb88b4dba1a6334fd1.png"
-                      width="1600"
-                      height="1200"
-                      alt=""
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                  <div class="project-card__body">
-                    <h3 class="project-card__name">El dolor como punto de partida</h3>
-                    <span class="project-card__more">Ver más →</span>
-                  </div>
-                </a>
-              </article>
-            </li>
-            <li class="js-reveal">
-              <article class="project-card">
-                <a
-                  class="project-card__link"
-                  href="parallel-ds.html"
-                >
-                  <div class="project-card__thumb">
-                    <img
-                      src="https://zoquete.art/_assets/v11/04673e25f10dab2b592c31860c23ff71667cec84.png"
-                      width="1920"
-                      height="1080"
-                      alt=""
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                  <div class="project-card__body">
-                    <h3 class="project-card__name">Diseñar orden para crear valor</h3>
-                    <span class="project-card__more">Ver más →</span>
-                  </div>
-                </a>
-              </article>
-            </li>
-            <li class="js-reveal">
-              <article class="project-card">
-                <a
-                  class="project-card__link"
-                  href="estu-dia.html"
-                >
-                  <div class="project-card__thumb">
-                    <img
-                      src="https://zoquete.art/_assets/v11/ed842e9f383382d24ff74fc461b3c1c8e5d7bc63.png"
-                      width="1920"
-                      height="1080"
-                      alt=""
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                  <div class="project-card__body">
-                    <h3 class="project-card__name">
-                      El diseño como guía en la busqueda de un proposito
-                    </h3>
-                    <span class="project-card__more">Ver más →</span>
-                  </div>
-                </a>
-              </article>
-            </li>
-            <li class="js-reveal">
-              <article class="project-card">
-                <a
-                  class="project-card__link"
-                  href="dily.html"
-                >
-                  <div class="project-card__thumb">
-                    <img
-                      src="https://zoquete.art/_assets/v11/7d6a3d07ba793016aa050d517716e935f417f593.png"
-                      width="956"
-                      height="539"
-                      alt=""
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                  <div class="project-card__body">
-                    <h3 class="project-card__name">Diseñar menos para convertir más</h3>
-                    <span class="project-card__more">Ver más →</span>
-                  </div>
-                </a>
-              </article>
-            </li>
-            <li class="js-reveal">
-              <article class="project-card">
-                <a
-                  class="project-card__link"
-                  href="scraping.html"
-                >
-                  <div class="project-card__thumb">
-                    <img
-                      src="https://zoquete.art/_assets/v11/43cbfdb345b1f00b1b659509c001310d856746cc.png"
-                      width="1920"
-                      height="1080"
-                      alt=""
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                  <div class="project-card__body">
-                    <h3 class="project-card__name">Automatizar para asegurar la verdad</h3>
-                    <span class="project-card__more">Ver más →</span>
-                  </div>
-                </a>
-              </article>
-            </li>
-            <li class="js-reveal">
-              <article class="project-card">
-                <a
-                  class="project-card__link"
-                  href="benchmark.html"
-                >
-                  <div class="project-card__thumb">
-                    <img
-                      src="https://zoquete.art/_assets/v11/385737d7a5d62e174796a599ef23edf3d6bc4011.png"
-                      width="1904"
-                      height="2544"
-                      alt=""
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                  <div class="project-card__body">
-                    <h3 class="project-card__name">Aprender afuera, mejorar adentro</h3>
-                    <span class="project-card__more">Ver más →</span>
-                  </div>
-                </a>
-              </article>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="recomendaciones" class="recommendations section" aria-labelledby="reco-title">
-        <div class="shell recommendations__inner js-reveal">
-          <div class="recommendations__head">
-            <h2 id="reco-title" class="recommendations__title">Recomendaciones</h2>
-            <div class="recommendations__controls" aria-label="Controles del carrusel">
-              <button type="button" class="reco-btn" data-reco-prev aria-label="Anterior">
-                ←
-              </button>
-              <button type="button" class="reco-btn" data-reco-next aria-label="Siguiente">
-                →
-              </button>
+      <!-- CONTACTO -->
+      <section class="section" id="contacto" aria-labelledby="contact-title">
+        <div class="shell js-reveal">
+          <div class="contact__card">
+            <h2 class="section-title" id="contact-title">Contáctame</h2>
+            <div class="contact__grid">
+              <a class="contact__item" href="https://www.instagram.com/zoquete_/" target="_blank" rel="noopener">
+                <span class="contact__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
+                </span>
+                <span>
+                  <span class="contact__label">@zoquete_</span><br />
+                  <span class="contact__sub">Instagram</span>
+                </span>
+              </a>
+              <a class="contact__item" href="https://www.linkedin.com/in/felipe-maluenda/" target="_blank" rel="noopener">
+                <span class="contact__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="2"/><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 17v-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span>
+                  <span class="contact__label">Felipe Maluenda 👾</span><br />
+                  <span class="contact__sub">LinkedIn</span>
+                </span>
+              </a>
+              <a class="contact__item" href="tel:+56967217619">
+                <span class="contact__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M4 5c0 8.28 6.72 15 15 15 .9 0 1.65-.6 1.9-1.42l.5-1.6a1.5 1.5 0 0 0-.9-1.85l-3-1.1a1.5 1.5 0 0 0-1.7.5l-.7.9a11.5 11.5 0 0 1-5.3-5.3l.9-.7a1.5 1.5 0 0 0 .5-1.7l-1.1-3A1.5 1.5 0 0 0 7.02 2.6l-1.6.5A2 2 0 0 0 4 5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                </span>
+                <span>
+                  <span class="contact__label">+569 6721 7619</span><br />
+                  <span class="contact__sub">Teléfono</span>
+                </span>
+              </a>
             </div>
           </div>
-
-          <div class="reco" data-reco>
-            <div class="reco__viewport" tabindex="0" aria-label="Carrusel de recomendaciones">
-              <ol class="reco__track" role="list">
-                <li class="reco__slide" id="reco-1" data-reco-slide>
-                  <figure class="reco-card">
-                    <blockquote class="reco-card__quote">
-                      Felipe es un profesional que le gusta estar actualizado, gusta del buen diseño y
-                      de generar comunidad en el mundo de UX. Tuve la oportunidad de trabajar con él
-                      en Cencosud y desde nuestra primera interacción. él manifestó ser un
-                      profesional comprometido, eficiente, con dominio de Figma y con un gran sentido
-                      del trabajo en equipo. Por lo que trabajar con él en ambientes agiles se vuelve
-                      una ayuda indispensable.
-                    </blockquote>
-                    <figcaption class="reco-card__by">
-                      <span class="reco-card__name">Christian Alejandro Díaz</span>
-                      <span class="reco-card__role">UX Designer Cencosud</span>
-                    </figcaption>
-                  </figure>
-                </li>
-
-                <li class="reco__slide" id="reco-2" data-reco-slide>
-                  <figure class="reco-card">
-                    <blockquote class="reco-card__quote">
-                      Trabajé junto a Felipe en Dily y la verdad es que solo puedo decir buenas cosas
-                      sobre el. Además de ser un excelente profesional y team player, es una
-                      excelente persona. Desde el día uno que entré me sentí acogida, se preocupó de
-                      que fuéramos un equipo sólido y que nos tuviéramos la confianza de darnos
-                      feedback constructivos y apoyarnos. Y no solo conmigo, se preocupó de conocer y
-                      escuchar a todos sus pares logrando formar un equipo unido.🙌🏽
-                    </blockquote>
-                    <figcaption class="reco-card__by">
-                      <span class="reco-card__name">María José Gondonneau A</span>
-                      <span class="reco-card__role">Product Designer Dily</span>
-                    </figcaption>
-                  </figure>
-                </li>
-
-                <li class="reco__slide" id="reco-3" data-reco-slide>
-                  <figure class="reco-card">
-                    <blockquote class="reco-card__quote">
-                      Tuve la suerte de trabajar con Felipe y no puedo dejar de recomendarlo como
-                      profesional y persona. Es de esas personas que siempre van un paso más allá de
-                      lo que se espera: es proactivo, comprometido y con una capacidad increíble para
-                      encontrar soluciones, ya sean creativas o estratégicas. Lo que más destaco de él
-                      es su disposición constante a ayudar. No importa si es parte directa de su rol,
-                      el siempre está disponible para aportar y sumar valor al equipo.
-                    </blockquote>
-                    <figcaption class="reco-card__by">
-                      <span class="reco-card__name">Fernanda Robalino</span>
-                      <span class="reco-card__role">Estratega de Marketing Dily</span>
-                    </figcaption>
-                  </figure>
-                </li>
-              </ol>
-            </div>
-
-            <div class="reco-dots" role="tablist" aria-label="Paginación del carrusel">
-              <button type="button" class="reco-dot" role="tab" aria-controls="reco-1" aria-label="Ir a recomendación 1" data-reco-dot="0"></button>
-              <button type="button" class="reco-dot" role="tab" aria-controls="reco-2" aria-label="Ir a recomendación 2" data-reco-dot="1"></button>
-              <button type="button" class="reco-dot" role="tab" aria-controls="reco-3" aria-label="Ir a recomendación 3" data-reco-dot="2"></button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contacto" class="contact section" aria-labelledby="contacto-title">
-        <div class="shell contact__inner contact__inner--panel js-reveal">
-          <h2 id="contacto-title" class="contact__title">Contactame</h2>
-
-          <ul class="contact__list" role="list">
-            <li class="contact__item">
-              <a
-                class="contact__channel"
-                href="https://www.instagram.com/zoquete_/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span class="contact__icon" aria-hidden="true">
-                  <img
-                    src="https://zoquete.art/_assets/v11/ff8e981f14042c53a54a9b0c433c0758e2ee8b96.png"
-                    width="48"
-                    height="48"
-                    alt=""
-                    loading="lazy"
-                  />
-                </span>
-                <span class="contact__lines">
-                  <span class="contact__primary">@zoquete_</span>
-                  <span class="contact__secondary">Instagram</span>
-                </span>
-              </a>
-            </li>
-            <li class="contact__item">
-              <a
-                class="contact__channel"
-                href="https://www.linkedin.com/in/felipe-maluenda/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span class="contact__icon" aria-hidden="true">
-                  <img
-                    src="https://zoquete.art/_assets/v11/95ffb684987f6e4a611d840867ede9fae4faa05b.png"
-                    width="48"
-                    height="48"
-                    alt=""
-                    loading="lazy"
-                  />
-                </span>
-                <span class="contact__lines">
-                  <span class="contact__primary">Felipe Maluenda 👾</span>
-                  <span class="contact__secondary">Linkedin</span>
-                </span>
-              </a>
-            </li>
-            <li class="contact__item">
-              <a class="contact__channel" href="tel:+56967217619">
-                <span class="contact__icon" aria-hidden="true">
-                  <img
-                    src="https://zoquete.art/_assets/v11/5b8a93e47b0acab025d360690633964bf8afa076.png"
-                    width="48"
-                    height="48"
-                    alt=""
-                    loading="lazy"
-                  />
-                </span>
-                <span class="contact__lines">
-                  <span class="contact__primary">+569 6721 7619</span>
-                  <span class="contact__secondary">Teléfono</span>
-                </span>
-              </a>
-            </li>
-          </ul>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="shell site-footer__inner">
-        <p>
-          © <span id="year"></span> Felipe Maluenda. Contenido tomado de
-          <a href="https://zoquete.art/" target="_blank" rel="noopener noreferrer">zoquete.art</a>.
-        </p>
-        <p class="site-footer__credit">HTML5 · CSS · JavaScript</p>
+      <div class="shell">
+        <p>© <span id="year"></span> Felipe Maluenda · zoquete.art</p>
       </div>
     </footer>
 
