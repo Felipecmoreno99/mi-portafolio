@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Automatizar para asegurar la verdad · Felipe Maluenda</title>
+    <meta name="description" content="Automatizar para asegurar la verdad — portafolio de Felipe Maluenda." />
+    <link rel="icon" href="img/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+      <div class="shell site-header__inner">
+        <a class="site-logo" href="index.html#contenido" aria-label="Zoquete — inicio">
+          <img src="img/logo.png" width="60" height="54" alt="Logo zoquete" />
+        </a>
+        <button type="button" class="site-nav__toggle" aria-expanded="false" aria-controls="site-nav">
+          <span class="visually-hidden">Abrir o cerrar menú</span>
+          <span class="site-nav__toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Principal">
+          <a href="index.html#sobre-mi">Sobre mí</a>
+          <a href="index.html#proyectos">Ver proyectos</a>
+          <a href="index.html#recomendaciones">Recomendaciones</a>
+          <a href="index.html#contacto">Contacto</a>
+          <span class="nav-sep" aria-hidden="true"></span>
+          <a href="blog.html">Blog</a>
+        </nav>
+      </div>
+    </header>
+    <main id="contenido">
+      <article class="case section">
+        <div class="shell case__inner js-reveal">
+          <a class="case__back" href="index.html#proyectos">← Volver a proyectos</a>
+          <h1 class="case__title">Automatizar para asegurar la verdad</h1>
+          <figure class="case__hero"><img src="img/scraping-1.png" alt="Automatizar para asegurar la verdad" loading="lazy" decoding="async" /></figure>
+          <p class="case__lead">
+            El proyecto Scraping nació como una respuesta a una problemática crítica dentro de
+            Cencosud: la falta de sincronía entre los precios publicados en los sitios web públicos
+            y los precios registrados en los sistemas internos. Esta discrepancia se volvía
+            especialmente crítica en temporadas de alto tráfico y alta demanda —como los Cyber Days—
+            donde cualquier error en la publicación de precios podía afectar directamente la
+            reputación de marca y la confianza del cliente.
+          </p>
+          <div class="case-row">
+            <figure class="case-row__media"><img src="img/scraping-2.png" alt="" loading="lazy" decoding="async" /></figure>
+            <div class="case-row__text">
+<h2 class="case__h2">Problemas en el camino</h2>
+<p>
+            El proyecto Scraping nació como una respuesta a una problemática crítica dentro de
+            Cencosud: la falta de sincronía entre los precios publicados en los sitios web públicos
+            y los precios registrados en los sistemas internos. Esta discrepancia se volvía
+            especialmente crítica en temporadas de alto tráfico y alta demanda —como los Cyber Days—
+            donde cualquier error en la publicación de precios podía afectar directamente la
+            reputación de marca y la confianza del cliente.
+          </p>
+            </div>
+          </div>
+          <div class="case-row">
+            <div class="case-row__text">
+<h2 class="case__h2">El desafío</h2>
+<p>
+            El objetivo fue diseñar e implementar una herramienta automatizada que permitiera
+            validar los precios publicados en los sitios públicos de Cencosud contra la información
+            interna, garantizando la coherencia y evitando errores antes de que impactaran al
+            cliente. Además, el producto debía ser escalable a distintas banderas y países,
+            adaptándose a las particularidades de cada mercado.
+          </p>
+            </div>
+            <figure class="case-row__media"><img src="img/scraping-3.png" alt="" loading="lazy" decoding="async" /></figure>
+          </div>
+          <div class="case-block">
+<h2 class="case__h2">Proceso de diseño y negociación</h2>
+<ol class="case__list case__list--ordered">
+            <li>
+              El proyecto comenzó como una prueba piloto con la bandera de Supermercados Chile
+              (Jumbo y Santa Isabel).
+            </li>
+            <li>
+              Levantamiento de información: realizamos entrevistas con equipos de pricing, TI y
+              canales digitales para entender sus flujos y puntos de dolor.
+            </li>
+            <li>
+              Prototipado: desarrollamos bocetos de interfaz centrados en la facilidad de carga y
+              lectura de datos, validando cada paso con los equipos operativos.
+            </li>
+            <li>
+              Validación inicial: el MVP permitía cargar una nómina con los campos esenciales —SKU,
+              nombre, precio original y precio oferta— para contrastarlos automáticamente con los
+              datos publicados en los sitios web.
+            </li>
+            <li>
+              Iteración: tras validar la eficacia del proceso en supermercados, ajustamos el diseño
+              para permitir alertas automáticas y visualización rápida de inconsistencias, lo que
+              mejoró significativamente la capacidad de reacción del equipo.
+            </li>
+          </ol>
+          </div>
+          <div class="case-row">
+            <figure class="case-row__media"><img src="img/scraping-4.png" alt="" loading="lazy" decoding="async" /></figure>
+            <div class="case-row__text">
+<h2 class="case__h2">Solución final</h2>
+<p>El lanzamiento del Scraping en la bandera de Supermercados Chile fue un éxito inmediato:</p>
+          <ul class="case__list">
+            <li>
+              Reducción del 92% en errores de precios publicados durante el primer Cyber posterior a
+              su implementación.
+            </li>
+            <li>
+              Disminución del 70% en tiempo de validación, pasando de revisiones manuales de horas a
+              procesos automáticos en minutos.
+            </li>
+            <li>
+              Incremento del 45% en confianza interna (según encuestas internas de satisfacción de
+              equipos de pricing y digital).
+            </li>
+          </ul>
+          <p>
+            Tras el éxito local, la herramienta se escaló a la bandera de Mejoramiento del Hogar
+            (Easy), logrando resultados similares. Finalmente, Scraping se expandió a las
+            operaciones de Cencosud en Argentina, Colombia y Perú, adaptándose a las estructuras de
+            datos y necesidades particulares de cada país.
+          </p>
+          <p>
+            Hoy, Scraping se consolidó como un producto clave dentro de la estrategia de control y
+            calidad digital de Cencosud, garantizando que cada precio publicado sea fiel al valor
+            real, fortaleciendo la confianza del cliente y la integridad de la marca.
+          </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <section class="section" id="contacto" aria-labelledby="contact-title">
+        <div class="shell js-reveal">
+          <div class="contact__card">
+            <h2 class="section-title" id="contact-title">Contáctame</h2>
+            <div class="contact__grid">
+              <a class="contact__item" href="https://www.instagram.com/zoquete_/" target="_blank" rel="noopener">
+                <span class="contact__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></span>
+                <span><span class="contact__label">@zoquete_</span><br /><span class="contact__sub">Instagram</span></span>
+              </a>
+              <a class="contact__item" href="https://www.linkedin.com/in/felipe-maluenda/" target="_blank" rel="noopener">
+                <span class="contact__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="2"/><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 17v-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span><span class="contact__label">Felipe Maluenda 👾</span><br /><span class="contact__sub">LinkedIn</span></span>
+              </a>
+              <a class="contact__item" href="tel:+56967217619">
+                <span class="contact__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 5c0 8.28 6.72 15 15 15 .9 0 1.65-.6 1.9-1.42l.5-1.6a1.5 1.5 0 0 0-.9-1.85l-3-1.1a1.5 1.5 0 0 0-1.7.5l-.7.9a11.5 11.5 0 0 1-5.3-5.3l.9-.7a1.5 1.5 0 0 0 .5-1.7l-1.1-3A1.5 1.5 0 0 0 7.02 2.6l-1.6.5A2 2 0 0 0 4 5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span>
+                <span><span class="contact__label">+569 6721 7619</span><br /><span class="contact__sub">Teléfono</span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="shell"><p>© <span id="year"></span> Felipe Maluenda · zoquete.art</p></div>
+    </footer>
+    <script src="main.js" defer></script>
+  </body>
+</html>
