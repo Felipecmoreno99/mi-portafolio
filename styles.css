@@ -319,7 +319,14 @@ a { color: inherit; }
 
 /* ---------------- Caso: layout intercalado (formato Figma) ---------------- */
 .case__hero { margin: 0 0 32px; }
-.case__hero img { width: 100%; border-radius: var(--r-lg); background: var(--chip-bg); }
+.case__hero img {
+  width: 100%; height: auto; max-height: 620px; object-fit: contain;
+  border-radius: var(--r-lg); background: var(--chip-bg);
+}
+/* banner decorativo (patrones de color): franja ancha */
+.case__hero--banner img {
+  height: 260px; max-height: 260px; object-fit: cover;
+}
 
 .case__body { max-width: 100%; margin: 0; }
 .case__intro { max-width: 720px; }
@@ -340,9 +347,10 @@ a { color: inherit; }
   display: grid; grid-template-columns: 1fr 1fr; gap: 48px;
   align-items: center; margin: 56px 0;
 }
+.case-row__media { display: flex; justify-content: center; }
 .case-row__media img {
-  width: 100%; border-radius: var(--r-lg);
-  background: var(--chip-bg); border: 1px solid var(--border);
+  max-width: 100%; max-height: 480px; width: auto; height: auto;
+  border-radius: var(--r-lg); background: var(--chip-bg); border: 1px solid var(--border);
 }
 .case-row__text .case__h2 {
   font-size: clamp(24px, 3vw, 30px); font-weight: 700;
@@ -363,3 +371,5 @@ a { color: inherit; }
   .case-row { grid-template-columns: 1fr; gap: 24px; margin: 40px 0; }
   .case-row--right .case-row__media { order: 0; }
 }
+
+.case-block--wide { max-width: 940px; }
